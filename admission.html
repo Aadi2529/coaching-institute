@@ -1,231 +1,286 @@
 <!doctype html>
 <html>
-  <head>
-    <title>IT Admission - Elite IT Coaching Institute</title>
-  </head>
+<head>
+<title>IT Admission - Elite IT Coaching Institute</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <header>
-      <h2>Elite IT Coaching Institute</h2>
+<body>
 
-      <hr />
+<!-- HEADER -->
 
-      <nav>
-        <a href="index.html">Home</a> | <a href="courses.html">Courses</a> |
-        <a href="admission.html">Admission</a> |
-        <a href="#contact">Contact</a>
-      </nav>
+<header id="main-header">
 
-      <hr />
-    </header>
+<h2 class="logo">Elite IT Coaching Institute</h2>
 
-    <main>
-      <section>
-        <h1>Online Admission Form</h1>
+<hr>
 
-        <p>
-          Admissions are now open for the March 2026 batch at Elite IT Coaching
-          Institute. Interested students can fill out the admission form below
-          to reserve their seats. Seats are limited and admissions will be
-          granted on a first-come-first-served basis.
-        </p>
-      </section>
+<nav id="navbar">
 
-      <hr />
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="courses.html">Courses</a>
+<a class="nav-link" href="admission.html">Admission</a>
+<a class="nav-link" href="#contact">Contact</a>
 
-      <form>
-        <fieldset>
-          <legend><strong>Student Information</strong></legend>
+</nav>
 
-          <p>
-            Full Name :
-            <input type="text" name="name" size="30" required />
-          </p>
+<hr>
 
-          <p>
-            Email Address :
-            <input type="email" name="email" size="30" required />
-          </p>
+</header>
 
-          <p>
-            Phone Number :
-            <input type="tel" name="phone" size="30" required />
-          </p>
 
-          <p>
-            Date of Birth :
-            <input type="date" name="dob" />
-          </p>
+<!-- MAIN CONTENT -->
 
-          <p>
-            Gender :
-            <input type="radio" name="gender" value="male" checked /> Male
-            <input type="radio" name="gender" value="female" /> Female
-            <input type="radio" name="gender" value="other" /> Other
-          </p>
-        </fieldset>
+<main id="main-content">
 
-        <hr />
+<section id="admission-intro">
 
-        <fieldset>
-          <legend><strong>Education Details</strong></legend>
+<h1 class="section-title">Online Admission Form</h1>
 
-          <p>
-            Highest Qualification :
-            <input
-              type="text"
-              name="qualification"
-              size="30"
-              placeholder="Example: B.Sc / B.Tech / Diploma"
-            />
-          </p>
+<p class="description">
+Admissions are now open for the March 2026 batch at Elite IT Coaching
+Institute. Interested students can fill out the admission form below
+to reserve their seats. Seats are limited and admissions will be
+granted on a first-come-first-served basis.
+</p>
 
-          <p>
-            College / University Name :
-            <input type="text" name="college" size="30" />
-          </p>
+</section>
 
-          <p>
-            Year of Passing :
-            <input type="number" name="year" min="2000" max="2030" />
-          </p>
-        </fieldset>
+<hr>
 
-        <hr />
 
-        <fieldset>
-          <legend><strong>Course Selection</strong></legend>
+<form id="admission-form">
 
-          <p>
-            Select Course :
-            <select name="course">
-              <option>MERN Stack Full-Stack Development</option>
-              <option>Data Structures & Algorithms</option>
-              <option>Python for Data Science</option>
-              <option>PHP & MySQL Backend Development</option>
-              <option>AWS Cloud Practitioner</option>
-              <option>Ethical Hacking & Cybersecurity</option>
-            </select>
-          </p>
+<fieldset class="form-section">
 
-          <p>
-            Preferred Batch :
-            <input type="radio" name="batch" value="morning" /> Morning
-            <input type="radio" name="batch" value="afternoon" /> Afternoon
-            <input type="radio" name="batch" value="evening" /> Evening
-            <input type="radio" name="batch" value="weekend" /> Weekend
-          </p>
+<legend><strong>Student Information</strong></legend>
 
-          <p>
-            Mode of Learning :
-            <input type="radio" name="mode" /> Offline
-            <input type="radio" name="mode" /> Online
-          </p>
-        </fieldset>
+<p class="form-group">
+Full Name
+<input class="form-input" type="text" name="name" required>
+</p>
 
-        <hr />
+<p class="form-group">
+Email Address
+<input class="form-input" type="email" name="email" required>
+</p>
 
-        <fieldset>
-          <legend><strong>Address Details</strong></legend>
+<p class="form-group">
+Phone Number
+<input class="form-input" type="tel" name="phone" required>
+</p>
 
-          <p>
-            Street Address :
-            <input type="text" name="address" size="40" />
-          </p>
+<p class="form-group">
+Date of Birth
+<input class="form-input" type="date" name="dob">
+</p>
 
-          <p>
-            City :
-            <input type="text" name="city" />
-          </p>
+<p class="form-group">
+Gender
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</p>
 
-          <p>
-            State :
-            <input type="text" name="state" />
-          </p>
+</fieldset>
 
-          <p>
-            Pin Code :
-            <input type="number" name="pincode" />
-          </p>
-        </fieldset>
 
-        <hr />
+<hr>
 
-        <fieldset>
-          <legend><strong>Additional Information</strong></legend>
 
-          <p>How did you hear about us?</p>
+<fieldset class="form-section">
 
-          <input type="checkbox" /> Social Media
-          <input type="checkbox" /> Friend / Referral
-          <input type="checkbox" /> Google Search
-          <input type="checkbox" /> Advertisement
+<legend><strong>Education Details</strong></legend>
 
-          <p>
-            Upload Resume :
-            <input type="file" />
-          </p>
+<p class="form-group">
+Highest Qualification
+<input class="form-input" type="text" name="qualification">
+</p>
 
-          <p>Why do you want to join this course?</p>
+<p class="form-group">
+College / University Name
+<input class="form-input" type="text" name="college">
+</p>
 
-          <textarea rows="4" cols="50"></textarea>
-        </fieldset>
+<p class="form-group">
+Year of Passing
+<input class="form-input" type="number" name="year">
+</p>
 
-        <hr />
+</fieldset>
 
-        <fieldset>
-          <legend><strong>Declaration</strong></legend>
 
-          <p>
-            <input type="checkbox" required />
-            I confirm that the information provided above is correct and I agree
-            to the institute's admission policies.
-          </p>
-        </fieldset>
+<hr>
 
-        <br />
 
-        <button type="submit">Submit Application</button>
-        <input type="reset" value="Reset Form" />
-      </form>
+<fieldset class="form-section">
 
-      <hr />
+<legend><strong>Course Selection</strong></legend>
 
-      <section id="contact">
-        <h2>Contact Information</h2>
+<p class="form-group">
+Select Course
+<select class="form-input" name="course">
+<option>MERN Stack Full-Stack Development</option>
+<option>Data Structures & Algorithms</option>
+<option>Python for Data Science</option>
+<option>PHP & MySQL Backend Development</option>
+<option>AWS Cloud Practitioner</option>
+<option>Ethical Hacking & Cybersecurity</option>
+</select>
+</p>
 
-        <p>
-          Address : ABC Tech Park, Chh. Sambhaji Nagar, Maharashtra – 431003
-        </p>
-        <p>Phone : XXXXXXXX98</p>
-        <p>Email : info@eliteitcoaching.com</p>
-      </section>
-    </main>
+<p class="form-group">
+Preferred Batch
+<input type="radio" name="batch"> Morning
+<input type="radio" name="batch"> Afternoon
+<input type="radio" name="batch"> Evening
+<input type="radio" name="batch"> Weekend
+</p>
 
-    <footer>
-      <hr />
+<p class="form-group">
+Mode of Learning
+<input type="radio" name="mode"> Offline
+<input type="radio" name="mode"> Online
+</p>
 
-      <section>
-        <p><strong>Quick Links</strong></p>
+</fieldset>
 
-        <a href="index.html">Home</a><br />
-        <a href="courses.html">Courses</a><br />
-      </section>
 
-      <br />
+<hr>
 
-      <section>
-        <p><strong>Follow Us</strong></p>
 
-        <p>Facebook | Instagram | LinkedIn | YouTube</p>
-      </section>
-      <hr>
+<fieldset class="form-section">
 
-      <br />
-      <section align="center">
-        <p>© 2026 Elite IT Coaching Institute.</p>
-        <p></p>Aditya Thakre. All Rights Reserved.</p>
-      </section>
-    </footer>
-  </body>
+<legend><strong>Address Details</strong></legend>
+
+<p class="form-group">
+Street Address
+<input class="form-input" type="text" name="address">
+</p>
+
+<p class="form-group">
+City
+<input class="form-input" type="text" name="city">
+</p>
+
+<p class="form-group">
+State
+<input class="form-input" type="text" name="state">
+</p>
+
+<p class="form-group">
+Pin Code
+<input class="form-input" type="number" name="pincode">
+</p>
+
+</fieldset>
+
+
+<hr>
+
+
+<fieldset class="form-section">
+
+<legend><strong>Additional Information</strong></legend>
+
+<p>How did you hear about us?</p>
+
+<label><input type="checkbox"> Social Media</label>
+<label><input type="checkbox"> Friend / Referral</label>
+<label><input type="checkbox"> Google Search</label>
+<label><input type="checkbox"> Advertisement</label>
+
+<p class="form-group">
+Upload Resume
+<input type="file">
+</p>
+
+<p>Why do you want to join this course?</p>
+
+<textarea class="form-input" rows="4"></textarea>
+
+</fieldset>
+
+
+<hr>
+
+
+<fieldset class="form-section">
+
+<legend><strong>Declaration</strong></legend>
+
+<p>
+<input type="checkbox" required>
+I confirm that the information provided above is correct and I agree
+to the institute's admission policies.
+</p>
+
+</fieldset>
+
+
+<br>
+
+<button class="submit-btn" type="submit">Submit Application</button>
+<input class="reset-btn" type="reset" value="Reset Form">
+
+</form>
+
+
+<hr>
+
+
+<section id="contact">
+
+<h2 class="section-title">Contact Information</h2>
+
+<p class="contact-info">
+Address : ABC Tech Park, Chh. Sambhaji Nagar, Maharashtra – 431003
+</p>
+
+<p class="contact-info">Phone : XXXXXXXX98</p>
+
+<p class="contact-info">Email : info@eliteitcoaching.com</p>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer id="main-footer">
+
+<hr>
+
+<section class="footer-links">
+
+<p><strong>Quick Links</strong></p>
+
+<a class="footer-link" href="index.html">Home</a><br>
+<a class="footer-link" href="courses.html">Courses</a>
+
+</section>
+
+<br>
+
+<section class="social-links">
+
+<p><strong>Follow Us</strong></p>
+
+<p>Facebook | Instagram | LinkedIn | YouTube</p>
+
+</section>
+
+<hr>
+
+<section id="copyright">
+
+<p>© 2026 Elite IT Coaching Institute.</p>
+<p>Aditya Thakre. All Rights Reserved.</p>
+
+</section>
+
+</footer>
+
+</body>
 </html>
